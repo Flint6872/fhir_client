@@ -1,7 +1,7 @@
 use serde::{Serialize, Deserialize};
 use crate::r4::{period, extension};
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
 pub struct HumanName {
   #[serde(rename = "use", default)]
     pub human_name_use: String,

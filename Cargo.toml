@@ -1,5 +1,6 @@
 [package]
 name = "fhir_client"
+authors = ["Flint6872 <Flint6872@gmail.com>"]
 version = "0.0.1"
 edition = "2021"
 
@@ -7,14 +8,19 @@ edition = "2021"
 
 
 [dependencies]
-# reqwest = { version = "0.11", features = ["json"], optional = true }
-# tokio = { version = "1", features = ["full"], optional = true }
+reqwest = { version = "0.11.17", features = ["json"], optional = true }
+tokio = { version = "1.25.0", features = ["full"], optional = true }
 
 reqwasm = {version = "0.5.0", optional = true }
 
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0.89"
+wasm-bindgen-futures = {version = "0.4.1", optional = true}
+wasm-bindgen = { version = "0.2.51", features = ["serde-serialize"], optional = true  }
 
-# [features]
-# reqwest = ["dep:reqwest"]
-# reqwasm = ["dep:reqwasm"]
+serde = { version = "1.0.162", features = ["derive"] }
+serde_json = "1.0.96"
+serde_derive = "^1.0.59"
+
+[features]
+reqwest = ["dep:reqwest", "dep:tokio"]
+reqwasm = ["dep:reqwasm"]
+reqwest-wasm = ["dep:reqwest","dep:wasm-bindgen-futures", "dep:wasm-bindgen"]

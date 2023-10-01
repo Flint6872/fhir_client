@@ -1,0 +1,14 @@
+[package]
+name = "yew_fhir"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = { version = "0.21.0" , features = ["csr"] }
+gloo ={ version = "0.10.0"}
+
+serde = "1.0.147"
+serde_json = "1.0.91"
+fhir_client = { path = "../../../fhir_client", features =["reqwest-wasm"]  }

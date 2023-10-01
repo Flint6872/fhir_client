@@ -1,7 +1,7 @@
 use serde::{Serialize, Deserialize};
 
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone,PartialEq)]
 pub struct Period {
     #[serde(rename = "start", default)]
     pub period_start: String,

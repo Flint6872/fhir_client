@@ -1,12 +1,12 @@
 use serde::{Serialize, Deserialize};
 
- #[derive(Serialize, Deserialize, Debug)]
+ #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
  pub struct  ExtensionPointer {
      #[serde(default)]
      pub extension: Vec<Extension>
  }
  
- #[derive(Serialize, Deserialize, Debug)]
+ #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
  pub struct  Extension {
      #[serde(default)]
      pub url: String,
