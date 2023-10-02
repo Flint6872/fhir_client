@@ -1,4 +1,4 @@
-##fhir_client
+#fhir_client
 
 Welcome to my Rust learning project.
 
@@ -13,17 +13,17 @@ let id = "591229";
 '''
 
 
-## FHIR Servers
-**[Hapi FHIR ](https://hapifhir.io/):
+# FHIR Servers
+*[Hapi FHIR ](https://hapifhir.io/):
 Java based FHIR Server
 
-**[Firely ](https://fire.ly/):
+*[Firely ](https://fire.ly/):
 .NET based FHIR Server
 
 
-## EMR FHIR
-**[Epic ](https://fhir.epic.com/)
-**[Cerner](https://fhir.cerner.com/)
+# EMR FHIR
+*[Epic ](https://fhir.epic.com/)
+*[Cerner](https://fhir.cerner.com/)
 
 
 
