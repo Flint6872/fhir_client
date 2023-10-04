@@ -19,7 +19,7 @@ pub async fn fetch_resource(fhir_resource: &str, id: &str) -> Result<String, req
    
         Ok(res)
     }
-let patient: Fhir::patient::Patient = serde_json::   from_str(&res).unwrap();
+let patient: Fhir::patient::Patient = serde_json::from_str(&res).unwrap();
 ```
 
 ## FHIR Servers
