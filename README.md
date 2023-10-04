@@ -1,4 +1,4 @@
-#fhir_client
+# fhir_client
 
 Welcome to my Rust learning project.
 
@@ -20,22 +20,23 @@ pub async fn fetch_resource(fhir_resource: &str, id: &str) -> Result<String, req
         Ok(res)
     }
 let patient: Fhir::patient::Patient = serde_json::   from_str(&res).unwrap();
-
 ```
 
-##FHIR Servers
-*[Hapi FHIR ](https://hapifhir.io/):
+## FHIR Servers
+
+* [Hapi FHIR ](https://hapifhir.io/):
 Java based FHIR Server
 
-*[Firely ](https://fire.ly/):
+* [Firely ](https://fire.ly/):
 .NET based FHIR Server
 
-##EMR on FHIR
--[Epic ](https://fhir.epic.com/)
--[Cerner](https://fhir.cerner.com/)
+## EMR on FHIR
 
-##Rust on FHIR
--[fhirbolt](https://github.com/lschmierer/fhirbolt/tree/main):Fhirbolt is an experimental suite of libraries for working with FHIR resources. It currently provides serialization and deserialization of JSON and XML resources for the Rust programming language.
+- [Epic ](https://fhir.epic.com/)
+- [Cerner](https://fhir.cerner.com/)
 
--[fhir_sdk](https://github.com/FlixCoder/fhir-sdk):
+## Rust on FHIR
+- [fhirbolt](https://github.com/lschmierer/fhirbolt/tree/main):Fhirbolt is an experimental suite of libraries for working with FHIR resources. It currently provides serialization and deserialization of JSON and XML resources for the Rust programming language.
+
+- [fhir_sdk](https://github.com/FlixCoder/fhir-sdk):
 This is a FHIR library in its early stages. The models are generated from the FHIR StructureDefinitions 
